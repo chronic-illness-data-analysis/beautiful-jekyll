@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Us
+title: Chronic Healers
 subtitle: Social Good!!!!
 ---
 
