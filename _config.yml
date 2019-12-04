@@ -21,6 +21,7 @@ description: Chronic Healers - CSCE 676 Course Project
 # List of links in the navigation bar
 navbar-links:
   Data : "data"
+  Methodology: "methodology"
   Result : "result"
   About Us: "aboutus"
   # Author's home: "https://github.com/akg92"
