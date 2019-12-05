@@ -42,23 +42,25 @@ More association can be found in below image. The one marked in red is side effe
 To recommend effective treatments for conditions and to know how effective treatments were, we used the effectiveness as the measure.
 To compute effectiveness:
 * We extracted the unique conditions, computed the minimum start date for that condition among all users.
-* Then we averages out the severity scores for the start data to compute value before.
-* Same thing we followed for the end data ( we took max in this case ) to compute value after.
-* Then we again to the mean of these two to get the effectiveness score. 
+* Then we averaged out the severity scores for the start date to compute value before.
+* Same thing we followed for the end date ( we took max in this case ) to compute value after.
+* Then we again took the mean of these two to get the effectiveness score. 
 * We treated positive score as effective and negative as not effective and the value indicates the extent of it.
+
 Recommender system predicts this effectiveness using SVD++ to recommend effective treatments for conditions. 
 Also using this metric , we came up with the following indirect insights from the data.
-For all the conditions recommended treatments like ( ocular migrane, gag reflex etc )  did not work out and they were extremely hard to manage .The effectiveness score for these conditions for the treatments in general was pretty low.
+For all the conditions recommended treatments like ( ocular migrane, gag reflex etc )  did not work out and they were extremely hard to manage .The effectiveness score for these conditions for the treatments prescribed was pretty low.
 
 
 ![Recommender](/img/data/cond_top10.png){:class="img-responsive"}
 ![Recommender](/img/data/sym_top10.jpeg.jpg){:class="img-responsive"}
 
-The analysis on a symptom level on the positive side indicated that for common symptoms like splitting, sore hands ( etc) the treatments recommended were generally effective ( indicating high curablility).
+The analysis on a symptom level on the positive side indicated that for common symptoms like splitting, sore hands ( etc); the treatments recommended were generally effective ( indicating high curablility).
+
 RMSE for the SVD ++ recommender system – 0.97 ( effectiveness metric )
 
 # Prediction of Condition Based on Symptoms
-Using the Decision tree based prediction ( XGBoost ) we represented each condition experienced by different users as a vector of symptoms. So for the prediction model these symptoms were features. So we handpicked most common conditions converting this problem into a multi-class classification( one vs another). We got an F1-Score of 74% as the final result.
+Using the Decision tree based prediction ( XGBoost ) we represented each condition experienced by different users as a vector of symptoms. So for the prediction model these symptoms were features. We handpicked most common conditions converting this problem into a multi-class classification( one vs another). We got an F1-Score of 74% as the final result.
 * Precistion = 0.97
 * Recall = 0.59
 * F-1 = 0.74
@@ -66,7 +68,7 @@ Final parameters used are max_depth = 4, booster = gbtree, eta = 0.3, max_bin = 
 
 # Data Insight
 ![Insight](/img/data/common_by_family.jpg){:class="img-responsive"}
-For all the conditions present the data, the above figure represents the count of the conditional families present in the data. The families were obtained from another data source??? and we combined the two datasets to categorize the conditions by families. We found that among all chronic illnesses Neural conditions are the ones experienced mostly by the users.
+For all the conditions present in the data, the above figure represents the count of the conditional families. The families were obtained from another data source(additional flaredown dataset) and we combined the two datasets to categorize the conditions by families. We found that among all chronic illnesses Neural conditions are the ones experienced mostly by the users.
 
 ![Insight](/img/data/weather_sev_corr.jpeg){:class="img-responsive"}
 Analysing the weather tags in the data we found another interesting insight as reflected in the figure above. The weather stability has an impact on severity conditions and in general we observe that the average severity of all conditions is pretty low when the weather conditions are stable.
