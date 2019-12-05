@@ -68,11 +68,8 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: false
   email: "shibintv@tamu.edu"
-  facebook: "wedon't use"
   github: chronic-illness-data-analysis
-  twitter: "we don't use"
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
