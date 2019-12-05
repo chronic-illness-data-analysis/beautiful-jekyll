@@ -23,6 +23,7 @@ navbar-links:
   Data : "data"
   Methodology: "methodology"
   Result : "result"
+  Conclusion : "conclusion"
   About Us: "aboutus"
   # Author's home: "https://github.com/akg92"
 
