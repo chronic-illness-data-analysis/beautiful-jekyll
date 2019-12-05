@@ -3,6 +3,7 @@ layout: page
 title: Data
 subtitle: Let's Explore!!!!
 ---
+FlareDown Dataset https://www.kaggle.com/flaredown/flaredown-autoimmune-symptom-tracker
 # Introduction
 Flaredown is an app that helps patients of chronic autoimmune and invisible illnesses improve their symptoms by avoiding triggers and evaluating their treatments. Each day, patients track their symptom severity, treatments and doses, and any potential environmental triggers (foods, stress, allergens, etc) they encounter.
 
