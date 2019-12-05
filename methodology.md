@@ -20,6 +20,7 @@ Effectiveness score computation was one of the key metrics to  measure the effec
 * We used 20 latent factors and trained the model for 20 epochs,
 * Effectiveness score computation was one of the key metrics to  measure the effectiveness of a treatment
 <br/><br/>
+
 **Association Rule mining treating ( Symptoms + Treatment ) as baskets(items ) and each row/truncations as a user.**<br/>
 For a Support of 0.001,C=0.4 and lift = 2 we got an highly indirect and interesting result . When we built the rules, we found the side effects(listed as symptoms) of conditions in the majority part of the result. For eg (nausea,headache) -> 
 (fludrocortisone) indicating nausea and headaches are side effects of fludrocortisone.
@@ -27,8 +28,10 @@ __Additional data preprocessing and model specfic details can be found in the re
 <br/><br/>
 
 # Data PreProcessing
-##### Cleaning Trackables
+
+## Cleaning Trackables
 Since the trackable names are not standardized and probably entered and registered by different persons, there are many synonyms, equivalents, duplicates or simple writing mistakes in them. For any further analysis of the trackables such as association mining, it’s very important that the trackables that are actually the same thing do not be considered different. Below are some examples of such synonyms in different trackables occurred in the database:
+
 ##### Symptoms:
 ‘fatigue’ = ‘tiredness’, ‘drowsiness’ = ‘sleepiness’, ‘aggression’ = ‘hostility’ = ‘aggressiveness’
 
