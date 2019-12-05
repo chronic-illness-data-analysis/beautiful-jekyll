@@ -3,7 +3,6 @@ layout: page
 title: Conclusion
 subtitle: Winding Up!!
 ---
-![Winding Up](/img/data/winding_up.jpg){:class="img-responsive"}
 
 # Challenges We Faced
 ![Winding Up](/img/data/Challenge.jpg){:class="img-responsive"}

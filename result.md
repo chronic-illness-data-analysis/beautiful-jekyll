@@ -33,6 +33,9 @@ After fine tuning the parameters, we found that for a Support of 0.001,C=0.4 and
 
 If we pick a particular treatment/drug like Fludrocortisone. It was prescribed to a total of 62 users and out of them 53 people suffered from nausea and headache which we identified as side effects. So in Conclusion a lot of people suffered from the side effects which we discovered from the rules.
 
+More association can be found in below image. The one marked in red is side effect and rest is intended effects.
+![AssociationTable](/img/data/table_detailed.png){:class="img-responsive"}
+
 
 # Recommender System
 ### Effectiveness Metric Computation For Recommender System
