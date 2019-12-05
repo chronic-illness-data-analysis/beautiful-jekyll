@@ -11,7 +11,7 @@ Our Team Name is Chronic Healers
 
 What else do you need?
 
-### Why We??
+### Why Is This Project Required?
 Many people experience suffering chronic diseases and symptoms throughout their life. Chronic
 symptoms usually need persistent management and keeping track of, since there is usually no
 certain cure for them. Patients usually go through a long period of treatment with different
