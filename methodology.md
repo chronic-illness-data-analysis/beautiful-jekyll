@@ -10,18 +10,18 @@ subtitle: Findings!!!!
 #### Techniques Applied
 
 **PCA/Clustering of Symptoms ( Where each condition was represented as a symptom vector ) to figure which symptoms co-occur.**<br/>
-Number of 50 PCA dimensions  and 10 clusters.
+50 PCA dimensions and 10 clusters.
 <br/><br/>
 **Decision Tree based ( XgBoost) prediction of a condition based on a symptom.**<br/>
-One vs Rest XGBoost Model with parameter max_depth = 4, booster = gbtree, eta = 0.3, max_bin = 256. 
+One vs Rest XGBoost Model with max_depth = 4, booster = gbtree, eta = 0.3, max_bin = 256. 
 <br/><br/>
 **Recommendation System to recommend effective treatments ( SVD++ ).**<br/>
 Effectiveness score computation was one of the key metrics to  measure the effectiveness of a treatment.
 * We used 20 latent factors and trained the model for 20 epochs,
 * Effectiveness score computation was one of the key metrics to  measure the effectiveness of a treatment
 <br/><br/>
-
-**Association Rule mining treating ( Symptoms + Treatment ) as baskets(items ) and each row/truncations as a user.**<br/>
+ 
+**Association Rule mining - Treating ( Symptoms + Treatment ) as baskets(items ) and each row/truncations as a user.**<br/>
 For a Support of 0.001,C=0.4 and lift = 2 we got an highly indirect and interesting result . When we built the rules, we found the side effects(listed as symptoms) of conditions in the majority part of the result. For eg (nausea,headache) -> 
 (fludrocortisone) indicating nausea and headaches are side effects of fludrocortisone.
 __Additional data preprocessing and model specfic details can be found in the result section__
